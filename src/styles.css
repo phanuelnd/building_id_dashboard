@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Global styles */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: rgb(249 250 251);
+}
+
+/* Custom component styles */
+.btn-primary {
+  padding: 0.5rem 1rem;
+  background-color: rgb(37 99 235);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 200ms;
+}
+
+.btn-primary:hover {
+  background-color: rgb(29 78 216);
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: rgb(37 99 235);
+  border: 1px solid rgb(37 99 235);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 200ms;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(239 246 255);
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border: 1px solid rgb(229 231 235);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 200ms, box-shadow 200ms;
+}
+
+.form-input:focus {
+  border-color: rgb(59 130 246);
+  box-shadow: 0 0 0 2px rgb(59 130 246 / 0.2);
+}
